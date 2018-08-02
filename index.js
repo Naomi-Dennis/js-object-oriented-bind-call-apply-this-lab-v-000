@@ -1,6 +1,6 @@
 function justInvoke(callback){
     return callback.call(window)
 }
-function setThisWithCall(callback, arg){
+function setThisWithCall(callback, scope, value){
   return callback.call(window, arg)
 }
