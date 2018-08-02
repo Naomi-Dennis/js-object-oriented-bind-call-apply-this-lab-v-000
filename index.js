@@ -4,3 +4,6 @@ function justInvoke(callback){
 function setThisWithCall(callback, scope, value){
   return callback.call(scope, value)
 }
+function setThisWithApply(callback, scope, args){
+  return callback.apply(scope, args)
+}
