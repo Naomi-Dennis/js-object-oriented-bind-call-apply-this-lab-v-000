@@ -1,3 +1,3 @@
-function invokeFunction(callback){
+function justInvoke(callback){
     return callback
 }
