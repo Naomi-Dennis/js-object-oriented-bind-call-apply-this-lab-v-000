@@ -8,5 +8,5 @@ function setThisWithApply(callback, scope, args){
   return callback.apply(scope, args)
 }
 function returnNewFunctionOf(callback){
-  return (() => { callback }.)bind(this)
+  return (() => { callback }).bind(this)
 }
