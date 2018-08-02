@@ -8,6 +8,6 @@ function setThisWithApply(callback, scope, args){
   return callback.apply(scope, args)
 }
 function returnNewFunctionOf(callback, fred){
-  let c = callback 
-  return function(){ c() }.bind(fred)
+  let c = callback
+  return function(){ console.log(c) }.bind(fred)
 }
