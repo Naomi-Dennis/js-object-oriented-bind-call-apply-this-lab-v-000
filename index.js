@@ -1,3 +1,3 @@
 function justInvoke(callback){
-    return callback.bind(window)
+    return callback.call(window)
 }
