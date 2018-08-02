@@ -9,5 +9,5 @@ function setThisWithApply(callback, scope, args){
 }
 function returnNewFunctionOf(callback, fred){
   let c = callback 
-  return function(){ callback() }.bind(fred)
+  return function(){ c() }.bind(fred)
 }
