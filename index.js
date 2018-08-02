@@ -1,3 +1,3 @@
 function invokeFunction(callback){
-    return callback 
+    return callback.bind(window)
 }
